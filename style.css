@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+/* ================================================ Projects ===============================================*/
+#projectBoard {
+    width: 90%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#projectBoard .projectContainer {
+    border: 2px solid red;
+    flex: 1 1 0;
+}
+.projectTitle {
+    text-align: center;
+}
+.projectImg {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*===================================== Skills =========================================*/
+#skillGrid {
+   width: 100%;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: 50px;
+}
+.square {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+#skillGrid .skillContainer {
+    width: 70%;
+    height: 100%;
+
+    display: inline-block;
+}
+.square p {
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.conHtml {
+    background-color: #D500FF;
+}
+.html {
+    width: 60%;
+    background-color: #550066;
+}
+.conCss {
+    background-color: #01FE26;
+}
+.css {
+    width: 60%;
+    background-color: #00660F;
+}
+.conJs {
+    background-color: #4D7CFF;
+}
+.js {
+    width: 70%;
+    background-color: #1F3266;
+}
+.conPy {
+    background-color: #FFDE4D;
+}
+.py {
+    width: 40%;
+    background-color: #66591F;
+}
+.conJava {
+    background-color: #FF8400;
+}
+.java {
+    width: 30%;
+    background-color: #663500;
+}
+.conMatlab {
+    background-color: #00F8FF;
+}
+.matlab {
+    width: 20%;
+    background-color: #006366;
+}
+@media only screen and (max-width:1200px) {
+    #skillGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:750px) {
+    #skillGrid{
+        grid-template-columns: 1fr;
+    }
+    #skillGrid .square {
+        width: 100%;
+    }
+}
+
+
+
+/*========================================================ROCK PAPER SCISSORS =============================================*/
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+#scoreDisplay {
+    text-align: center;
+    display: inline-block;
+    width: 600px;
+    border: 2px solid black;
+    margin: 10px 200px;
+}
+.displayBoard {
+    display: inline-block;
+    width: 100px;
+    border: 5px solid red
+}
+body {
+    text-align: center;
+}
+.playerMove {
+    cursor:pointer;
+}
+
+#playerMovesContainer {
+    border: 3px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#winDisplay {
+    border: 5px solid aqua;
+}
+#lossDisplay {
+    border: 5px solid orange;
+}
+#drawDisplay {
+    border: 5px solid greenyellow;
+}
+#streakDisplay {
+    border: 5px solid purple;
+}
+#comMoveContainer {
+    margin-top: 20px;
+}
+#computersPlay {
+    border: 2px dotted black;
+    border-radius: 5px;
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    background-size: contain;
+    background-position: center;
+}
+
+#gameModal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 200px ;
+    position: fixed;
+    display: none;
+    left:0;
+    top:0;
+}
+
+#popupBox {
+    background-color: #fefefe;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    border: 5px solid #888;
+    width: 50%;
+}
+
+#popupText {
+    color: red;
+}
+
+#reset {
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    border: 2px solid orange;
+    background-color: yellow
+}
