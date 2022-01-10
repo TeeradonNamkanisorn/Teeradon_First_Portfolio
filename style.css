@@ -1,9 +1,19 @@
 * {
     box-sizing: border-box;
 }
-h1 {
-    margin: 0 auto;
+body {
+    font-family: "Open Sans";
 }
+h1 {
+    font-family: "Arial";
+    margin: 0 auto;
+    font-size: 48px;
+}
+h2 {
+    font-size: 40px;
+    font-family: "Arial"
+}
+
 
 nav ul {
     display: flex;
@@ -70,14 +80,14 @@ nav ul {
 #projectBoard {
     width: 90%;
     height: auto;
-    border: 2px solid black;
     border-radius: 5px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
+
 #projectBoard .projectContainer {
-    border: 2px solid red;
+    border: 2px solid black;
     flex: 1 1 0;
 }
 .projectTitle {
@@ -87,6 +97,24 @@ nav ul {
     width: 100%;
     height: auto;
 }
+#playGame {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: hotpink;
+    color: darkgreen;
+    width: 100px;
+    height: 50px;
+}
+
+#memoryGameLinkButton {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: #FF8E3D;
+    color: #067F8A;
+    width: 200px;
+    height: 50px;
+}
+
 /*Tablet and mobile view*/
 .mobileImg {
     width: 50%;
@@ -94,6 +122,10 @@ nav ul {
 .dropDown {
     display: none;
 }
+.warning {
+    color: red;
+}
+
 @media only screen and (max-width: 900px) {
     #projectBoard {
         display: none;
@@ -124,7 +156,7 @@ nav ul {
 }
 .square p {
     display: inline-block;
-    width: 17%;
+    width: 20%;
     text-align: center;
 }
 
@@ -198,11 +230,7 @@ nav ul {
 
 
 /*========================================================ROCK PAPER SCISSORS =============================================*/
-#playGame {
-    border: 2px solid green;
-    width: 50px;
-    height: 50px;
-}
+
 h1 {
     margin: 0 auto;
     text-align: center;
@@ -217,7 +245,6 @@ h1 {
 .displayBoard {
     display: inline-block;
     width: 100px;
-    border: 5px solid red
 }
 body {
     text-align: center;
@@ -279,9 +306,7 @@ body {
     width: 50%;
 }
 
-#popupText {
-    color: red;
-}
+
 #myModal {
     width: 100%;
     height: 100%;

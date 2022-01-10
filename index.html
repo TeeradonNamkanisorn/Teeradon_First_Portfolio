@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teeradon Namkanisorn Portfolio</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#skills">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -24,12 +25,12 @@
         <div id="profContainer">
             <img src="ProfPic.jpg">
             <p>
-                My name is Teeradon Namkanisorn. I graduated from aerospace engineering faculty, Chulalongkorn University. After the graduation,
+                My name is Teeradon Namkanisorn. I graduated from the aerospace engineering faculty, Chulalongkorn University. After the graduation,
             I found my new interest which is computer programming.
             </p>
                 <p>
                     Computer programming intrigues me because of the magic of automation which I can command it as will. It's wonderful.
-            I have been coding since November.
+            I have been coding since November 2021.
                 </p>
                 <p>
                     My goal is either be employed as a junior developer by the end of the year or be accpeted to a graduate program in software engineering or
@@ -147,7 +148,8 @@
                     After 5 seconds the red tiles will disappear and now it's the player's time to click on the aforementioned squares. 
                     If all the tiles clicked are the exact ones as the ones shown at the game start, then it match is evaluated as a win. 
                 </p>
-                <button id="memoryGameLinkButton">
+                <p class="warning">Warning: not compatible on mobile</p>
+                <button id="memoryGameLinkButton_mobile">
                     Go to game site
                 </button>
             </div>
@@ -218,13 +220,15 @@
             document.getElementById("gameModal").style.display = "none";
         })
         document.getElementById("rpsLinkButton").addEventListener("click", function () {
-            window.open("#");
+            window.open("RockPaperScissorPage/index.html");
         })
            
         document.getElementById("memoryGameLinkButton").addEventListener("click", function(){
-            window.open("#");
+            window.open("MemoryGamePage/index.html");
         })
-        
+        document.getElementById("memoryGameLinkButton_mobile").addEventListener("click", function(){
+            window.open("MemoryGamePage/index.html");
+        })
         
     </script>
 </body>

@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul.contactList {
+    margin: 40px auto;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 400px;
+}
+ul.contactList li a, ul.contactList li p {
+    display: inline-block;
+}
+ul.contactList li {
+    padding: 0 1rem;
+}
+ul.contactList > li > a {
+    float: right;
+}
+
+.contactList img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
