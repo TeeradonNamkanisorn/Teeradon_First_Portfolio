@@ -14,23 +14,36 @@
                 <ul>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#skills">Projects</a></li>
-                    <li><a>Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a>Contact</a></li>
                 </ul>
             </nav>
         </header>
     <section id="about">
-        <img src="#">
         <h2>About Me</h2>
-        <h3>
-            My name is Teeradon Namkanisorn. I graduated from aerospace engineering faculty, Chulalongkorn University. After the graduation,
-            I found my new interest which is computer programming. Computer programming intrigues me because of the magic of automation which I can command it as will. It's wonderful.
-            I have been coding since November. My goal is either be employed as a junior developer by the end of the year or be accpeted to a graduate program in software engineering or
-            computer science department. I am an honest person as I rarely lie and I almost never betray or backstab my friends. My learning speed could take more time than other people but rest 
-            assured that once I understand something, I understand it deeper than many people and I don't forget them long-term.
-        </h3>
+        <div id="profContainer">
+            <img src="ProfPic.jpg">
+            <p>
+                My name is Teeradon Namkanisorn. I graduated from aerospace engineering faculty, Chulalongkorn University. After the graduation,
+            I found my new interest which is computer programming.
+            </p>
+                <p>
+                    Computer programming intrigues me because of the magic of automation which I can command it as will. It's wonderful.
+            I have been coding since November.
+                </p>
+                <p>
+                    My goal is either be employed as a junior developer by the end of the year or be accpeted to a graduate program in software engineering or
+            computer science department.
+                </p>
+                <p>
+                    I am an honest person as I rarely lie and I almost never betray or backstab my friends. My learning speed could take more time than other people but rest 
+                    assured that once I understand something, I understand it deeper than many people and I don't forget them long-term.
+                </p>
+        </div>
+        
     </section>
     <section id="projects">
+        <h2>Projects</h2>
         <div id="projectBoard">
             <div class="projectContainer">
                 <h3 class="projectTitle">Grob-103 Aerodynamics Analysis</h3>
@@ -43,15 +56,102 @@
                 </p>
             </div>
             <div class="projectContainer">
+                <h3 class="projectTitle">Web browser Rock Paper Scissors</h3>
+                <img src="rps.png" alt="" class="projectImg">
+                <p class="description">Rock Paper Scissor game developed with Javascript, Html and Css. The player play a move and the computer will respond. 
+                    After the response, the match result will be shown and the player can proceed to the next round. Click <b>Play</b> button to start and press <b>Exit</b> to close the game.
+                </p>
                 <button id="playGame">PLAY</button>
                 <div id="gameModal">
-                    <div id="popupBox">
-                        <p id = "popupText">test</p>
+                    <div id="game">
+                        <h1>RPS game</h1>
+                        <div class="instructionDisplay">
+                            ROCK => SCISSORS => PAPER => ROCK
+                        </div>
+                        <div id = "scoreDisplay" class='displays'>
+                            <div class="displayBoard">Wins <p id="winDisplay" class="displayNumbers">0</p></div>
+                            <div class="displayBoard">Losses <p id="lossDisplay" class="displayNumbers">0</p></div>
+                            <div class="displayBoard">Draws <p id="drawDisplay" class="displayNumbers">0</p></div>
+                            <div class="displayBoard">Win Streak <p id="streakDisplay" class="displayNumbers">0</p></div>
+                        </div>
+                        <div id = "playerMovesContainer">
+                                <b>Click one of these icons or press 1/2/3 to play a move</b> <br>
+                            <img id="rock" class="playerMove" src="rock.png" alt="rock">
+                            <img id="paper" class="playerMove" src="paper.png" alt="paper">
+                            <img id="scissor" class="playerMove" src="scissors.png" alt="scissor">
+                        </div>
+                        <div id='comMoveContainer'>
+                            Computer's Move
+                            <br>
+                            <div id = "computersPlay">
+                
+                            </div>
+                        </div>
+                        <div id="myModal">
+                            <div id="modalContent" class="modal">
+                                <p id = "modalText"></p>
+                                <p id="reminder"> Press <em>space</em> to close</p>
+                            </div>
+                        </div>
+                        <button id="reset">RESET</button>
+                        <button id="exit">Exit</button>
                     </div>
                 </div>
             </div>
-            <div class="projectContainer"></div>
+            <div class="projectContainer">
+                <h3 class="projectTitle">Memory Game</h3>
+                <img src="memoryPreview.png" alt="" class="projectImg">
+                <p class="description">
+                    This games starts by showing the user a set of red tiles. The player will have to memorize its position in the grid.
+                    After 5 seconds the red tiles will disappear and now it's the player's time to click on the aforementioned squares. 
+                    If all the tiles clicked are the exact ones as the ones shown at the game start, then it match is evaluated as a win. 
+                </p>
+                <button id="memoryGameLinkButton">
+                    Go to game site
+                </button>
+            </div>
         </div>
+        <details class="dropDown">
+            <summary>
+                Glider grob-103 aerodynamic simulation
+            </summary>
+            <div class="projectContainer">
+                <h3 class="projectTitle">Grob-103 Aerodynamics Analysis</h3>
+                <img class="projectImg mobileImg"src="grob103_pic.png">
+                <p class="description">
+                    The project aimed to visuallize pressure distribution around Grob-103 glider which is a sub-sonic low-alitude aircraft.
+                    The simulated environment were under the specified condition of the aircraft's flight altitude and speed. The simulation result 
+                    was that pressure is the most extreme near the leading edges of the wings and the static pressure difference generates lift on the surface area of the wings.
+                    Technologies used were <b>Solidworks</b> and <b>Ansys Fluent</b>.
+                </p>
+            </div>
+        </details>
+        <details class="dropDown">
+            <summary>Rock Paper Scissors</summary>
+            <div class="projectContainer">
+                <h3 class="projectTitle">Web browser Rock Paper Scissors</h3>
+                <img src="rps.png" alt="" class="projectImg mobileImg">
+                <p class="description">Rock Paper Scissor game developed with Javascript, Html and Css. The player play a move and the computer will respond. 
+                    After the response, the match result will be shown and the player can proceed to the next round. Click <b>Play</b> button to start and press <b>Exit</b> to close the game.
+                </p>
+                <button id="rpsLinkButton">Go to game site</button>
+            </div>
+        </details>
+        <details class="dropDown">
+            <summary>Memory Game</summary>
+            <div class="projectContainer">
+                <h3 class="projectTitle">Memory Game</h3>
+                <img src="memoryPreview.png" alt="" class="projectImg mobileImg">
+                <p class="description">
+                    This games starts by showing the user a set of red tiles. The player will have to memorize its position in the grid.
+                    After 5 seconds the red tiles will disappear and now it's the player's time to click on the aforementioned squares. 
+                    If all the tiles clicked are the exact ones as the ones shown at the game start, then it match is evaluated as a win. 
+                </p>
+                <button id="memoryGameLinkButton">
+                    Go to game site
+                </button>
+            </div>
+        </details>
     </section>
     <section id="skills">
         <h2>My skills</h2>
@@ -106,11 +206,26 @@
             </div>
         </div>
     </section>
+    <!--Script for the rock paper scissor game on the desktop screen mode-->
+    <script src="script.js"></script>
     <script>
+        /* Script for clicking buttons */
         const playButton = document.getElementById("playGame");
         playButton.onclick = function () {
             document.getElementById("gameModal").style.display = "block"
         }
+        document.getElementById("exit").addEventListener("click", function() {
+            document.getElementById("gameModal").style.display = "none";
+        })
+        document.getElementById("rpsLinkButton").addEventListener("click", function () {
+            window.open("#");
+        })
+           
+        document.getElementById("memoryGameLinkButton").addEventListener("click", function(){
+            window.open("#");
+        })
+        
+        
     </script>
 </body>
 </html>

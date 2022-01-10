@@ -17,6 +17,7 @@ nav ul {
     margin: 0 auto;
 }
 
+
 @media only screen and (max-width: 700px) {
     nav ul{
         flex-direction: column;
@@ -24,8 +25,48 @@ nav ul {
     }
     
 }
+/* ======================================== About =======================================*/
+#profContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+#about p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-indent: 2em;
+    text-align:left;
+}
+#about img{ 
+    float: left;
+    width: 20vw;
+}
+@media only screen and (max-width:1000px) {
+    #about {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:800px) {
+    #about {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:600px) {
+    #about {
+        font-size: 10px;
+    }
+    #about img {
+        float: none;
+    }
+}
 
 /* ================================================ Projects ===============================================*/
+#projects {
+    margin: 40px auto;
+}
+#projects h2{
+    text-align: center;
+}
 #projectBoard {
     width: 90%;
     height: auto;
@@ -46,9 +87,21 @@ nav ul {
     width: 100%;
     height: auto;
 }
-
-
-
+/*Tablet and mobile view*/
+.mobileImg {
+    width: 50%;
+}
+.dropDown {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    #projectBoard {
+        display: none;
+    }
+    .dropDown {
+        display: block;
+    }
+}
 
 /*===================================== Skills =========================================*/
 #skillGrid {
@@ -208,10 +261,11 @@ body {
 #gameModal {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 200px ;
+    background-color: #ffffffF0;
+
     position: fixed;
     display: none;
+    overflow: scroll;
     left:0;
     top:0;
 }
@@ -232,7 +286,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 200px ;
+    padding-top: 100px ;
     position: fixed;
     display: none;
     left:0;
@@ -257,4 +311,10 @@ body {
     margin: 15px auto;
     border: 2px solid orange;
     background-color: yellow
+}
+#exit {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color:turquoise;
 }
